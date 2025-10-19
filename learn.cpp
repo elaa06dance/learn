@@ -25,5 +25,8 @@ int main()
     Pair<double> p2{1.2, 3.4}; // instantiates Pair<double> and creates object p2
     std::cout << p2.first << ' ' << p2.second << '\n';
 
+    int x{};
+    std::cout << x;
+
     return 0;
 }
