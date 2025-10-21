@@ -22,12 +22,18 @@ int main()
     Pair0<int> p0;
     std::cout << p0.first << ' ' << p0.second << '\n';
 
-    // Pair1 compiles error for C++11
-    Pair1<int> p1{5, 6}; // instantiates Pair<int> and creates object p1
+    Pair0<double> p00;
+    std::cout << p00.first << ' ' << p00.second << '\n';
+
+    Pair0<double> p000{2.5, 3.4};
+    std::cout << p000.first << ' ' << p000.second << '\n';
+
+    Pair1<int> p1;
     std::cout << p1.first << ' ' << p1.second << '\n';
 
-    // Pair1<double> p2{1.2, 3.4}; // instantiates Pair<double> and creates object p2
-    // std::cout << p2.first << ' ' << p2.second << '\n';
+    // Pair1 compiles error for C++11 if both init here and in struct (compare to Pair0)
+    // Pair1<int> p11{5, 6};
+    // std::cout << p11.first << ' ' << p11.second << '\n';
 
     return 0;
 }
